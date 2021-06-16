@@ -10,19 +10,22 @@
     "test": "mocha",
     "test:module2": "mocha test/module2.test.js",
     "test:module3": "mocha test/module3.test.js",
-    "test:module4": "mocha test/module4.test.js"
+    "test:module4": "mocha test/module4.test.js",
+    "build": "babel src-d build",
+    "build-clean": "rm -rf build",
+    "postbuild-clean": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmbanugo/node-automating-with-npm-scripts.git"
+    "url": "git+https://github.com/blissfulwolf/node-automating-with-npm-scripts"
   },
   "keywords": [],
-  "author": "Peter Mbanugo <p_mbanugo @Twitter>",
+  "author": "Jasper Teo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pmbanugo/node-automating-with-npm-scripts/issues"
+    "url": "https://github.com/blissfulwolf/node-automating-with-npm-scripts"
   },
-  "homepage": "https://github.com/pmbanugo/node-automating-with-npm-scripts#readme",
+  "homepage": "https://github.com/blissfulwolf/node-automating-with-npm-scripts#readme",
   "dependencies": {
     "fastify": "2.12.1"
   },
