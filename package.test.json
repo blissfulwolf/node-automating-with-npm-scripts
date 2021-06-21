@@ -6,6 +6,7 @@
   "engines": {
     "node": ">=8"
   },
+  
   "scripts": {
     "test": "mocha",
     "test:module2": "mocha test/module2.test.js",
@@ -15,7 +16,10 @@
     "build-clean": "rm -rf build",
     "postbuild-clean": "npm run build",
     "lint": "npx standard \"src/*.js\"",
-    "lint-fix": "npx standard \"src/*.js\" --fix"
+    "lint-fix": "npx standard \"src/*.js\" --fix",
+    "start" :  "npm run build && node build/index.js",
+    "start-dev" : "nodemon --watch src --exec PORT=5000 npm start",
+    "prestart-dev" : "npm run lint-fix"
   },
 
 
